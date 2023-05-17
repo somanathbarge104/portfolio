@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Somanath Barge - Portfolio</title>
+	<meta charset="utf-8">
+	 <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=Sf2NuZRCVuaE&format=png" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+	<style>
+	 {
+  background-color: #f7dabc;
+}
+	
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.panel:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.2);
+  background-color: #efe5e5;
+}
+
+
+	item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skill-item img {
+  margin-right: 10px;
+}
+/* Navbar styles */
+.navbar {
+  background-color: #ffcc99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+
+.navbar:hover {
+  background-color: #ffcc99;
+  color: #333;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  stroke: #000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+/*img*/
+.img-thumbnail {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease-in-out;
+  background: linear-gradient(to bottom, orange 50%, green 50%);
+  background-clip: padding-box;
+  margin-bottom:-35px;
+  border: 10px solid transparent;
+}
+
+.img-thumbnail:hover {
+  filter: grayscale(60%);
+ 
+  border-radius: 100%;
+}
+.gold {
+  border-radius: 50%;
+  transition: border-color 0.3s ease-in-out;
+  background-clip: padding-box;
+  margin-bottom:-35px;
+  border: 10px solid transparent;
+}
+
+
+
+
+/* Main section styles */
+.container-fluid {
+  padding: 40px;
+}
+.bg-light {
+  background-color: #f8f9fa;
+}
+h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+ul {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 1px solid #ccc;
+}
+
+/* Education section styles */
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.col-md-6 {
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+  .col-sm-6 ul li a {
+    color: blue;
+    font-weight: bold;
+  }
+
+  .col-sm-6 ul li:nth-child(2) a {
+    color: red;
+    font-style: italic;
+  }
+
+  .col-sm-6 ul li:nth-child(3) a {
+    color: green;
+    text-decoration: underline;
+  }
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-red">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#internships">Internships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certifications">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#languages">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Hire Me</a>
+        
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid bg-light">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+           <div class="panel" id="about">
+      <div class="d-flex justify-content-center">
+        <img src="https://media.licdn.com/dms/image/D4D03AQGkxqomAqmyIw/profile-displayphoto-shrink_400_400/0/1683120048388?e=1689811200&v=beta&t=bc4QXMMFN_z59g6VVBNG7EmOtVbDKZPlycmbZhVEiHM" alt="Somanath Barge" class="rounded-circle img-thumbnail" style="width: 200px; height: 200px;">
+      </div>
+      <div>
+      <h1 class="mt-5" id="about">Somanath Barge</h1>
+      <div style="text-align:center;">
+  <img src="https://www.pngmart.com/files/12/Golden-Line-PNG-Photo.png" alt="Golden Line" class="gold" style="width: 300px; margin-top: -35px; margin-bottom:30px">
+</div>
+</div>
+      
+      <p class="text-center">Greetings! I am Somanath Barge, a dedicated tech enthusiast from India. With a profound understanding of software development and a relentless drive for innovation, I strive to craft exceptional solutions that transcend expectations. I embrace challenges as opportunities for growth, and my passion for learning fuels my pursuit of excellence. I firmly believe that hard work, combined with a touch of humor, can create a positive impact and foster meaningful relationships. which inspire me to explore the world with an adventurous spirit. Let's forge ahead together and embark on an exciting journey of technological discovery!</p>
+     
+      </div>
+   
+	     <div class="panel" id="education">
+			
+<h2 class="text-center py-4 border-bottom">Education</h2>
+<div class="row">
+	<div class="col-md-6">
+		<h4>Present</h4>
+		<ul>
+			<li>BTech in Computer Science & Engineering</li>
+			<li>Dnyanshree Institute of Engineering and Technology, Satara</li>
+			<li>CGPA: 8.64</li>
+		</ul>
+		<h4>Summer 2020</h4>
+		<ul>
+			<li>Diploma in Computer Engineering</li>
+			<li>Satara Polytechnic, Satara</li>
+			<li>Percentage: 82.23%</li>
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<h4>February 2018</h4>
+		<ul>
+			<li>HSC</li>
+			<li>Jr. College of Art's Science & Commerce, Rahimatpur</li>
+			<li>Percentage: 53.08%</li>
+		</ul>
+		<h4>March 2016</h4>
+		<ul>
+			<li>SSC</li>
+			<li>Dr.V.G.Paranjpe Vidyalaya, Rahimatpur</li>
+			<li>Percentage: 79.40%</li>
+		</ul>
+	</div>
+</div> 
+   </div> 
+     <div class="panel" id="projects">
+
+<h2 class="text-center py-4 border-bottom">Projects</h2>
+<div class="row">
+	<div class="col-md-6">
+		<h4>Student Management System</h4>
+		<a href="https://github.com/somanathbarge104/Student-Management-System-ERP">Project Link</a>
+		<p>The project I developed, sponsored by the college, aimed to reduce paperwork and streamline administrative processes. Using JSP, Servlet, Java, MySQL, Bootstrap, CSS, and JDBC technologies, I designed and implemented a comprehensive system. I focused on creating an intuitive user interface and seamless user experience while handling student and admin authentication, student enrollment, and admission reporting. Through meticulous testing and debugging, I ensured the system's reliability. Leveraging MySQL for efficient data management and retrieval, along with Bootstrap and CSS for a visually appealing design, this project successfully brought together various technologies to create a robust solution that minimized paperwork and enhanced administrative efficiency.</p>
+				<h4>Sales Data Analysis of Computer Hardware Company</h4>
+				<a href="https://github.com/somanathbarge104/Sales-Analysis-of-Computer-Hardware-Company">Project Link</a>
+	<p>Completed sales data analysis project using MySQL and created Power BI visualization dashboard. Employed data cleaning, preprocessing, and handling techniques to analyze sales trends and market demand.</p>
+</div>
+<div class="col-md-6">
+	<h4>Attendance Management System for Our College</h4>
+	<a href="https://github.com/somanathbarge104/Attendance-Management-System-DIET-College">Project Link</a><p>The Attendance Management System I developed for our college aimed to streamline the attendance tracking process. With a focus on user authentication, I implemented a secure login system for teachers and enabled them to create classrooms, add students, and mark attendance efficiently. The system also included a report generation feature, empowering teachers to track attendance trends and generate comprehensive reports. Throughout the development process, I ensured seamless communication between the front-end and back-end functionality, optimizing the system's performance. This project enhanced my proficiency in JSP, Servlet, Java, and MySQL, enabling me to create a reliable and effective solution for attendance management in our college.</p></div>
+</div>			
+</div>
+  <div class="panel" id="skills">
+
+<h2 class="text-center py-4 border-bottom">Skills</h2>
+  <div class="row">
+    <div class="col-lg-25">
+    <h3>Languages:</h3>    
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-5">
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png"/>
+        <h4 class="mt-3">Java</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/96/000000/html-5--v1.png"/>
+        <h4 class="mt-3">HTML</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/96/000000/css3.png"/>
+        <h4 class="mt-3">CSS</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
+        <h4 class="mt-3">JavaScript</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/ios-filled/96/000000/sql.png"/>
+        <h4 class="mt-3">SQL</h4>
+      </div>
+    </div>
+    <h3>Data Analytics:</h3>
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-5">
+    
+    <div class="skill-item">
+        <img src="https://img.icons8.com/?size=96&id=7DajRjkNMHR5&format=png"/>
+        <h4 class="mt-3">Data Analytics</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/?size=96&id=12841&format=png"/>
+        <h4 class="mt-3">Data Tables</h4>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/?size=96&id=114888&format=png"/>
+        <h4 class="mt-3">Data Visualization</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+     <div class="panel" id="internships">
+
+<h2  class="text-center py-4 border-bottom">Internships</h2>
+  <div class="row">
+    <div class="col-lg-25">
+      <h4>SpiderG PVT.LTD Pune, Nov 2021 - Jan 2022</h4>
+      <ul>
+      <p>Data Mining Intern</p>
+      
+      <li>During my internship at SpiderG, Virtual, I gained valuable experience and developed critical skills in the field of data analysis and mining. As a data mining intern, my responsibilities included collecting, processing, and analyzing large datasets.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+       <div class="panel" id="certifications" > 
+<h2 class="text-center py-4 border-bottom">Certification</h2>
+    <div class="col-lg-25">
+      <ul>
+        <li>Java Programming: Solving Problems Course - Coursera<br> Coursera, a comprehensive online learning platform. Through this course, I gained in-depth knowledge of Java programming.</li>
+        <li>HTML, CSS, and Javascript for Web Developers - Coursera<br>This course provided me with a comprehensive understanding of web development and how to create dynamic and interactive web pages using HTML, CSS, and JavaScript.</li>
+      </ul>
+      </div>
+      </div>
+     <div class="panel" id="achievements">
+  <h2 class="text-center py-4 border-bottom">Achievements</h2>
+  <ul>
+    <li>Received second place in a catapult making competition organized by DIET Satara 2019.</li>
+    <li>First prize in a digital poster making competition on occasion of ‘Azadi Ka Amrit Mahotsav In Dnyanashree’.</li>
+    <li>Significant contribution to the Shrinivas Patil Foundation's "Yuva 360" project, dedicated to social service.</li>
+    <li>Participated in multiple CodeChef contests.</li>
+  </ul>
+</div>
+
+  <div class="panel row" id="languages">
+  <div class="col-md-6 text-center">
+    <h2 class="py-4 border-bottom">Languages</h2>
+    <ul>
+      <li>Marathi</li>
+      <li>English</li>
+      <li>Hindi</li>
+    </ul>
+  </div>
+  <div class="col-md-6 text-center" id="hobbies">
+    <h2 class="py-4 border-top border-bottom">Hobbies</h2>
+    <ul>
+      <li>Listening to Music</li>
+      <li>Bike Riding</li>
+      <li>Coding</li>
+    </ul>
+  </div>
+</div>
+
+
+   <div class="panel" id="contact">
+  <h2 class="text-center py-4 border-bottom">Hire Me</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <ul>
+        <li><i class="icon"><img src="https://img.icons8.com/?size=30&id=Mv7K3xjMvfuS&format=png" alt="phone icon"></i> <a href="tel:+919373384432">+91-9373384432</a></li>
+        <li><i class="icon"></i> <img alt="" src="https://img.icons8.com/?size=20&id=12623&format=png"> <a href="mailto:somanathbarge104@gmail.com">somanathbarge104@gmail.com</a></li>
+        <li><i class="icon"></i><img alt="" src="https://img.icons8.com/?size=30&id=23882&format=png"> <a href="https://example.com/resume.pdf">Link to My Resume</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <ul>
+        <li><i class="icon"></i><img alt="" src="https://img.icons8.com/?size=30&id=8808&format=png"> <a href="https://www.linkedin.com/in/somanathbarge/">Somanath Barge</a></li>
+        <li><i class="icon"></i><img alt="" src="https://img.icons8.com/?size=30&id=12599&format=png"> <a href="https://github.com/somanathbarge104">somanathbarge104</a></li>
+        <li><i class="icon"></i><img alt="" src="https://img.icons8.com/?size=30&id=4z2zrIWYmGqx&format=png"> <a href="https://www.codechef.com/users/barge">CodeChef</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+</body>
+</html>
